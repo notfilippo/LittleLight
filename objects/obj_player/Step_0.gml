@@ -3,14 +3,13 @@
 var xx = (keyboard_check(ord("D")) - keyboard_check(ord("A"))) * acceleration_;
 
 if xx > 0 {
-	image_speed = 1;
+	sprite_index = spr_player_walk;
 	image_xscale = 1;
 } else if xx < 0 {
-	image_speed = 1;
+	sprite_index = spr_player_walk;
 	image_xscale = -1;
 } else {
-	image_speed = 0;
-	image_index = 4;
+	sprite_index = spr_player_idle;
 }
 
 if xx = 0 {
