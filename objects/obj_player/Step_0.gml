@@ -1,15 +1,16 @@
 /// @description Movement
 
 var xx = (keyboard_check(ord("D")) - keyboard_check(ord("A"))) * acceleration_;
+var moving = false;
 
 if xx > 0 {
-	sprite_index = spr_player_walk;
+	if !jumping_ sprite_index = spr_player_walk;
 	image_xscale = 1;
+	moving = true;
 } else if xx < 0 {
-	sprite_index = spr_player_walk;
+	if !jumping_ sprite_index = spr_player_walk;
 	image_xscale = -1;
-} else {
-	sprite_index = spr_player_idle;
+	moving = true;
 }
 
 if xx = 0 {
@@ -23,10 +24,34 @@ if xx = 0 {
 if !place_meeting(x, y + 1, obj_solid) {
 	// LET'S NEWTON
 	velocity_[v] += gravity_;
+	
+	if sprite_index == spr_player_jump && image_index >= 1 {
+		sprite_index = spr_player_in_air;
+	}
+	
+	moving = true;
+	
 } else {
 	if keyboard_check_pressed(vk_space) {
+		sprite_index = spr_player_jump;
+		image_index = 0;
+		moving = true;			
 		velocity_[v] = -jump_speed_;
+		jumping_ = true;
+	} else if jumping_ && sprite_index == spr_player_land && image_index >= 2 {
+		jumping_ = false;
+		moving = false;
+	} else if jumping_ && sprite_index == spr_player_land {
+		moving = true;
+	}else if jumping_ && sprite_index == spr_player_in_air {
+		sprite_index = spr_player_land;
+		image_index = 0;
+		moving = true;
 	}
+}
+
+if (!moving) {
+	sprite_index = spr_player_idle;
 }
 
 power_ = (room_width - x) / room_width;

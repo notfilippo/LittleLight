@@ -25,3 +25,6 @@ u_vignette_settings_ = shader_get_uniform(shd_pixel_light, "vignette_settings");
 u_vignette_color_ = shader_get_uniform(shd_pixel_light, "vignette_color");
 u_player_light_color_ = shader_get_uniform(shd_pixel_light, "player_light_color");
 u_player_position_ = shader_get_uniform(shd_pixel_light, "player_position");
+
+parallax_[0] = layer_get_id("Parallax1x");
+parallax_x_[0] = 0.2;

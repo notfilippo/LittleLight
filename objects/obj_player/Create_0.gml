@@ -7,6 +7,7 @@ jump_speed_ = 14;
 acceleration_ = 1.1;
 power_ = 0;
 jab_power_ = 0;
+jumping_ = false;
 
 snd_fire_id_ = audio_play_sound(snd_fire, 1, true);
 
