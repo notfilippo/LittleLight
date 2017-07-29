@@ -55,10 +55,18 @@
             }
         },
         {
+            "Key": "1c8d817c-b1b8-494c-b58a-525c44f93e99",
+            "Value": {
+                "id": "a45a5406-4037-4126-bca9-2571355136c3",
+                "resourcePath": "sprites\\spr_player_idle\\spr_player_idle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "275a61a8-a88b-4ca9-9fcd-53f2f342a51b",
             "Value": {
                 "id": "fd070786-afce-42e6-8803-94935385e069",
-                "resourcePath": "sprites\\spr_player\\spr_player.yy",
+                "resourcePath": "sprites\\spr_player_walk\\spr_player_walk.yy",
                 "resourceType": "GMSprite"
             }
         },
