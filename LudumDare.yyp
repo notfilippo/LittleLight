@@ -95,6 +95,22 @@
             }
         },
         {
+            "Key": "4b83df8b-b66e-4209-8e39-1f3fd859b6b3",
+            "Value": {
+                "id": "96cb3cfb-20d7-4a9e-a722-dbcce1adc384",
+                "resourcePath": "shaders\\shd_pixel_light\\shd_pixel_light.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
+            "Key": "50ab91b4-2ec9-46a2-89a1-58a474c6d3ab",
+            "Value": {
+                "id": "3a0e14cb-0579-4a12-8ca9-20a8b2f8c9f3",
+                "resourcePath": "objects\\obj_controller\\obj_controller.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "54182c20-48a0-4e10-aeb9-1a0a9380cec8",
             "Value": {
                 "id": "80c9c5bf-91d4-4f71-8881-9a0e06a61778",
@@ -223,6 +239,14 @@
             }
         },
         {
+            "Key": "cbf5bcbe-7613-4662-ae23-c3202757420b",
+            "Value": {
+                "id": "0f28334b-6ef6-4956-b6b4-a49b8698b66b",
+                "resourcePath": "shaders\\shd_power_red\\shd_power_red.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "edd14098-b8c9-4996-84d8-15adb82548eb",
@@ -244,6 +268,14 @@
                 "id": "b1088bd4-865c-40ff-89f5-fa0f20c64c2e",
                 "resourcePath": "sounds\\snd_fire\\snd_fire.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "d8038473-b317-4acd-a218-a9f5838d54da",
+            "Value": {
+                "id": "45a433ff-fad5-425e-a435-757064eff468",
+                "resourcePath": "fonts\\fnt_endless_64\\fnt_endless_64.yy",
+                "resourceType": "GMFont"
             }
         },
         {

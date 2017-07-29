@@ -1,8 +1,7 @@
-/// @description Draw with glow
+/// @description Insert description here
+// You can write your code in this editor
 
-shader_set(shd_glow);
-shader_set_uniform_f(u_glow_color_, 1.0, 0.3, 0.5)
-shader_set_uniform_i(u_resolution_, room_width, room_height)
-shader_set_uniform_f(u_direction_, 0.0, 0.0)
+shader_set(shd_power_red);
+shader_set_uniform_f(u_power_, jab_power_);
 draw_self();
 shader_reset();

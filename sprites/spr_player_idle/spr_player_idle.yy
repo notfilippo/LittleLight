@@ -10,7 +10,7 @@
     "bbox_left": 33,
     "bbox_right": 63,
     "bbox_top": 0,
-    "bboxmode": 0,
+    "bboxmode": 2,
     "colkind": 1,
     "coltolerance": 0,
     "frames": [
@@ -97,8 +97,8 @@
             "visible": true
         }
     ],
-    "origin": 0,
-    "playbackSpeed": 15,
+    "origin": 8,
+    "playbackSpeed": 5,
     "playbackSpeedType": 0,
     "sepmasks": false,
     "swatchColours": null,
@@ -106,6 +106,6 @@
     "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
     "type": 0,
     "width": 64,
-    "xorig": 0,
-    "yorig": 0
+    "xorig": 63,
+    "yorig": 63
 }
