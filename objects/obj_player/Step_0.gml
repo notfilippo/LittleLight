@@ -2,7 +2,6 @@
 
 var xx = (keyboard_check(ord("D")) - keyboard_check(ord("A"))) * acceleration_;
 
-
 if xx = 0 {
 	// LET'S FRICTION
 	velocity_[h] = lerp(velocity_[h], 0, .2); 
@@ -19,5 +18,9 @@ if !place_meeting(x, y + 1, obj_solid) {
 		velocity_[v] = -jump_speed_;
 	}
 }
+
+power_ = (room_width - x) / room_width;
+image_alpha = power_;
+audio_sound_gain(snd_fire_id_, power_ / 4, 0);
 
 move(velocity_, false);
