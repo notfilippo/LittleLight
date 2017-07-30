@@ -3,6 +3,14 @@
 
 if debug_ {
 	draw_set_alpha(0.3);
-	draw_rectangle(obj_player.bbox_left, obj_player.bbox_bottom, obj_player.bbox_right, obj_player.bbox_top, true);
+	
+	with (obj_player) {
+		draw_bbox();
+	}
+	
+	with (obj_drop) {
+		draw_bbox();
+	}
+	
 	draw_set_alpha(1);
 }

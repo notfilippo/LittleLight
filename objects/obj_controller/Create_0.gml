@@ -28,3 +28,6 @@ u_player_position_ = shader_get_uniform(shd_pixel_light, "player_position");
 
 parallax_[0] = layer_get_id("Parallax1x");
 parallax_x_[0] = 0.2;
+
+parallax_[1] = layer_get_id("Parallax2x");
+parallax_x_[1] = 0.4;

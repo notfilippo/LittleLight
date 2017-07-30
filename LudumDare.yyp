@@ -95,6 +95,30 @@
             }
         },
         {
+            "Key": "34e0caa7-ddc7-4f04-90f5-fbe0c954c541",
+            "Value": {
+                "id": "a9aacbdb-bb47-4440-ae7c-0c0696b1aabb",
+                "resourcePath": "tilesets\\til_gound\\til_gound.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "3615f70d-9bc2-46be-8f6c-c269305b4c06",
+            "Value": {
+                "id": "cfc7b1fb-301c-4435-93ee-b48584926ede",
+                "resourcePath": "objects\\obj_generator\\obj_generator.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "36ee3218-8c41-43c0-a3e4-9f136bb58935",
+            "Value": {
+                "id": "ad3e703b-42cb-4190-8489-d47ec2203d96",
+                "resourcePath": "objects\\obj_autotile\\obj_autotile.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4490e5f4-14c6-48ce-a8e6-2580beefc047",
             "Value": {
                 "id": "d39324b2-60a5-4379-b8a5-185c451a78ca",
@@ -191,6 +215,14 @@
             }
         },
         {
+            "Key": "87f46810-c38a-4c09-9a8a-5bbb1588e034",
+            "Value": {
+                "id": "6ca679b0-59a4-462d-9896-e17b8f53af32",
+                "resourcePath": "sprites\\spr_ground\\spr_ground.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8cff9232-4241-4a1c-8398-3dea35db83c2",
             "Value": {
                 "id": "886c95e6-9b66-42b6-ab2f-626c6f8e2b2f",
@@ -242,7 +274,7 @@
             "Key": "ad39935f-fcb9-401d-94cd-ec808d739c62",
             "Value": {
                 "id": "cf118647-eaf0-451e-b8ae-bf3fa4d036ce",
-                "resourcePath": "objects\\obj_drops\\obj_drops.yy",
+                "resourcePath": "objects\\obj_drop\\obj_drop.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -284,6 +316,22 @@
                 "id": "64b57321-4281-453c-b99f-de23dfd0fa87",
                 "resourcePath": "sprites\\spr_player_dubleJump\\spr_player_dubleJump.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c18eff57-ce8a-465d-9828-9b458df225f1",
+            "Value": {
+                "id": "fcd139da-57b3-421e-9e8f-b6233c4bd393",
+                "resourcePath": "scripts\\generate_room\\generate_room.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "c5a6a7c8-eeb2-430e-9e7c-c83732237e68",
+            "Value": {
+                "id": "5c8fb167-2ae1-4348-8344-16de83b72074",
+                "resourcePath": "scripts\\autotile\\autotile.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -367,6 +415,14 @@
             }
         },
         {
+            "Key": "e4d83051-5205-43db-abb3-bac6efca6781",
+            "Value": {
+                "id": "e97fced5-963a-42c4-95b0-1d1056a673e3",
+                "resourcePath": "sprites\\spr_autotile\\spr_autotile.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e5339556-583f-4940-9713-c8e6a90be102",
             "Value": {
                 "id": "26c60c34-2185-4ede-aa60-399845730a6b",
@@ -391,17 +447,37 @@
             }
         },
         {
+            "Key": "f57741d1-00e0-44e8-bb95-add9fa842e7d",
+            "Value": {
+                "id": "4ea0f53b-0ac7-4fe0-9978-116513b8b35e",
+                "resourcePath": "scripts\\enums\\enums.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f73f9a2d-71b3-4a5b-9096-8a73bc0cafa8",
             "Value": {
                 "id": "a7e4017b-daa6-417c-956b-72a7f4581b15",
                 "resourcePath": "views\\f73f9a2d-71b3-4a5b-9096-8a73bc0cafa8.yy",
                 "resourceType": "GMFolder"
             }
+        },
+        {
+            "Key": "f88458ec-9d0b-4b48-a56c-d35659c1667f",
+            "Value": {
+                "id": "3a173755-a262-4bce-9a63-189f87c5186e",
+                "resourcePath": "scripts\\draw_bbox\\draw_bbox.yy",
+                "resourceType": "GMScript"
+            }
         }
     ],
     "script_order": [
+        "f57741d1-00e0-44e8-bb95-add9fa842e7d",
         "81fc4e6f-8485-41b9-8b63-d2e9f10f5c04",
-        "ac8111be-ac7d-4a59-aaa9-14578361928c"
+        "ac8111be-ac7d-4a59-aaa9-14578361928c",
+        "f88458ec-9d0b-4b48-a56c-d35659c1667f",
+        "c18eff57-ce8a-465d-9828-9b458df225f1",
+        "c5a6a7c8-eeb2-430e-9e7c-c83732237e68"
     ],
     "tutorial": ""
 }

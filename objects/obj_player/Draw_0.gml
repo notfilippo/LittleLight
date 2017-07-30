@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Light
 // You can write your code in this editor
 
 shader_set(shd_power_red);

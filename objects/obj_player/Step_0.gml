@@ -16,6 +16,7 @@ if xx > 0 {
 if xx = 0 {
 	// LET'S FRICTION
 	velocity_[h] = lerp(velocity_[h], 0, .2); 
+	
 } else {
 	// LET'S MOVE
 	velocity_[h] = clamp(velocity_[h] + xx, -max_velocity_[h] * jab_power_, max_velocity_[h] * jab_power_);
@@ -59,3 +60,9 @@ jab_power_ = max(power_, 0.4);
 audio_sound_gain(snd_fire_id_, power_ / 4, 0);
 
 move(velocity_, false);
+
+if y > room_height + sprite_height {
+	x = 95;
+	y = 544;
+	velocity_[h] = velocity_[v] = 0;
+}

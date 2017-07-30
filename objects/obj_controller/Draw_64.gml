@@ -10,10 +10,5 @@ if debug_ {
 	draw_text(10, 90,  "Parallax Layers: " + string(array_length_1d(parallax_)));
 	draw_text(10, 110, "Collision Tiles: " + string(tiles_));
 	draw_text(10, 130, "View 00:         " + string(camera_get_view_x(view_camera[0])) + ", " + string(camera_get_view_y(view_camera[0])));
+	draw_text(10, 150, "Instances:       " + string(instance_count - tiles_) + " (" + string(instance_count) + ")");
 }
-
-draw_set_font(fnt_endless_64);
-draw_set_halign(fa_center);
-draw_text(view_wport[0] / 2, 20, "00:00");
-draw_set_font(-1);
-draw_set_halign(fa_left);

@@ -1,8 +1,8 @@
 {
-    "id": "ad39935f-fcb9-401d-94cd-ec808d739c62",
+    "id": "36ee3218-8c41-43c0-a3e4-9f136bb58935",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_drops",
+    "name": "obj_autotile",
     "eventList": [
         
     ],
@@ -22,6 +22,6 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "solid": false,
-    "spriteId": "c63414c9-2bb3-4123-9ad2-8e6792fcd8af",
+    "spriteId": "e4d83051-5205-43db-abb3-bac6efca6781",
     "visible": true
 }

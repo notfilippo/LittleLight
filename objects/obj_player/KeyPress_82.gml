@@ -1,5 +1,5 @@
 /// @description Reset
 
-x = 64;
-y = 608;
+x = 95;
+y = 544;
 velocity_[h] = velocity_[v] = 0;
