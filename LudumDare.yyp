@@ -39,14 +39,6 @@
             }
         },
         {
-            "Key": "044ac870-5d7b-4ecb-9bfc-877971a10e9a",
-            "Value": {
-                "id": "4bda7e82-66f1-4d6a-bdf0-75618a4fb15e",
-                "resourcePath": "tilesets\\til_level\\til_level.yy",
-                "resourceType": "GMTileSet"
-            }
-        },
-        {
             "Key": "0ef4f2b0-4e6c-454b-8e50-9946776962af",
             "Value": {
                 "id": "d09a636a-7b26-40f9-ae40-883e8823d410",
@@ -151,14 +143,6 @@
             }
         },
         {
-            "Key": "54182c20-48a0-4e10-aeb9-1a0a9380cec8",
-            "Value": {
-                "id": "80c9c5bf-91d4-4f71-8881-9a0e06a61778",
-                "resourcePath": "sprites\\spr_tileset\\spr_tileset.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "54c7692a-9a57-47dd-82eb-4c66c6f2c8a2",
             "Value": {
                 "id": "5da86e18-6b50-4768-8635-46875a4bd0c5",
@@ -218,7 +202,7 @@
             "Key": "87f46810-c38a-4c09-9a8a-5bbb1588e034",
             "Value": {
                 "id": "6ca679b0-59a4-462d-9896-e17b8f53af32",
-                "resourcePath": "sprites\\spr_ground\\spr_ground.yy",
+                "resourcePath": "sprites\\spr_tileset\\spr_tileset.yy",
                 "resourceType": "GMSprite"
             }
         },
