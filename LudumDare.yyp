@@ -183,14 +183,6 @@
             }
         },
         {
-            "Key": "3f49ac53-2c52-449a-88cf-62a3a89d8a04",
-            "Value": {
-                "id": "a3d4e49f-d070-41dd-945f-8558253de500",
-                "resourcePath": "rooms\\rm_aa\\rm_aa.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "40f20adb-fb54-478a-9aaf-9517b941813d",
             "Value": {
                 "id": "5b5b3684-9d1e-48ae-909a-ec62af4e3178",
@@ -490,7 +482,7 @@
             "Key": "cae6c968-047e-48c8-ac2c-3c36477d8441",
             "Value": {
                 "id": "a0503fad-f3ce-49cb-a894-ff6c240e8067",
-                "resourcePath": "rooms\\rm_main1\\rm_main1.yy",
+                "resourcePath": "rooms\\rm_level_1\\rm_level_1.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -540,14 +532,6 @@
                 "id": "45a433ff-fad5-425e-a435-757064eff468",
                 "resourcePath": "fonts\\fnt_endless_64\\fnt_endless_64.yy",
                 "resourceType": "GMFont"
-            }
-        },
-        {
-            "Key": "d9a9772c-0d1e-4b10-9099-af7ec7655c42",
-            "Value": {
-                "id": "4e04f2e0-4c9d-48ce-9c4a-1955ebf1697c",
-                "resourcePath": "rooms\\rm_menu1\\rm_menu1.yy",
-                "resourceType": "GMRoom"
             }
         },
         {

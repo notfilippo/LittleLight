@@ -30,7 +30,7 @@
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
-            "hierarchyVisible": false,
+            "hierarchyVisible": true,
             "inheritLayerDepth": false,
             "inheritLayerSettings": false,
             "inheritSubLayers": false,
@@ -42,7 +42,7 @@
             "m_serialiseFrozen": false,
             "name": "Autotile",
             "userdefined_depth": false,
-            "visible": false,
+            "visible": true,
             "instances": [
                 {
                     "id": "2026a1b6-2775-4129-8d18-256dbca12361",
