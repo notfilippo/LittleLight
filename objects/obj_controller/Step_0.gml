@@ -1,4 +1,4 @@
-/// @description Parallax
+/// @description Parallax and Lights
 
 #macro padding 512
 
@@ -31,8 +31,30 @@ with obj_torch {
 	&& bbox_bottom + padding > cy
 	&& bbox_top - padding < cy + ch {
 	
-		global.lights[global.light_idx]     = x - cx + 7;
-		global.lights[global.light_idx + 1] = y - cy + 30;
+		if image_xscale == 1 {
+			global.lights[global.light_idx]     = x - cx + 7;
+			global.lights[global.light_idx + 1] = y - cy + 30;
+		} else {
+			global.lights[global.light_idx]     = bbox_right - cx - 7;
+			global.lights[global.light_idx + 1] = bbox_top - cy + 30;
+		}
+		
+		
+		global.lights[global.light_idx + 2] = 1;
+		global.light_idx += 3;
+	
+	
+	}
+}
+
+with obj_ceil_torch {
+	if bbox_right + padding > cx
+	&& bbox_left - padding < cx + cw
+	&& bbox_bottom + padding > cy
+	&& bbox_top - padding < cy + ch {
+	
+		global.lights[global.light_idx]     = bbox_left + 16 - cx;
+		global.lights[global.light_idx + 1] = bbox_bottom - 16 - cy;
 		global.lights[global.light_idx + 2] = 1;
 		global.light_idx += 3;
 	}

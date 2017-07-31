@@ -1,6 +1,5 @@
 /// @description Creation of collidable layer, A* grid, shader, parallax layers
 
-global.grid = mp_grid_create(0, 0, room_width / 32, room_height / 32, 32, 32);
 global.light_idx = 0;
 global.lights = array_create(20 * 3, 0.0);
 
@@ -16,7 +15,6 @@ for (var yy = 0; yy < tilemap_get_height(tilemap); yy += 1) {
 		if !tile_get_empty(data) {
 			tiles_++;
 			instance_create_layer(xx * 32, yy * 32, "Collisions", obj_solid);
-			mp_grid_add_cell(global.grid, xx, yy);
 		}
 	}
 }
