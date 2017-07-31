@@ -17,3 +17,6 @@ snd_fire_id_ = audio_play_sound(snd_fire, 1, true);
 u_max_power_ = shader_get_uniform(shd_extinguish, "max_power");
 u_power_ = shader_get_uniform(shd_extinguish, "power");
 u_invert_ = shader_get_uniform(shd_extinguish, "invert");
+
+spawn_x_ = x;
+spawn_y_ = y;

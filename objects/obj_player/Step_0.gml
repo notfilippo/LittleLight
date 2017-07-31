@@ -22,7 +22,7 @@ if xx = 0 {
 	
 } else {
 	// LET'S MOVE
-	velocity_[h] = clamp(velocity_[h] + xx, -max_velocity_[h], max_velocity_[h]);
+	velocity_[h] = clamp(velocity_[h] + xx, -max_velocity_[h] * clamp(power_ / max_power_ + 0.5, 0.5, 1), max_velocity_[h] * clamp(power_ / max_power_ + 0.5, 0.5, 1));
 	if !light_source_ power_ = clamp(power_ - 10 * dt, 0, max_power_);
 }
 
@@ -73,8 +73,7 @@ move(velocity_, false);
 // CHECKS
 
 if y > room_height + sprite_height {
-	x = 96;
-	y = 512;
+	power_ -= 2;
 	velocity_[h] = velocity_[v] = 0;
 }
 
@@ -83,7 +82,17 @@ if distance_to_object(obj_fireplace) < 128 {
 	power_ = clamp(power_ + (random_range(6, 16) * dt), 0, max_power_);
 } else if distance_to_object(obj_torch) < 128 {
 	light_source_ = true;
+} else if distance_to_object(obj_endlevel) < 128 {
+	light_source_ = true;
 } else {
 	light_source_ = false;
 	power_ = clamp(power_ - (random_range(4, 2) * dt), 0, max_power_);
 }
+
+if power_ <= 0 {
+	if !instance_exists(obj_reset) {
+		instance_create_layer(0, 0, "Instances", obj_reset);
+	}
+}
+
+audio_sound_gain(snd_fire_id_, clamp(power_ / max_power_ + 0.2, 0.2, 1), 0);

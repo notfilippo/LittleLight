@@ -5,5 +5,6 @@ if !rise_ {
 } else {
 	if (image_index >= 4) {
 		sprite_index = spr_endlevel;
+		alarm[0] = 10;
 	}
 }
