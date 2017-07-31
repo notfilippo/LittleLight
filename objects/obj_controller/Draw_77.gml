@@ -4,12 +4,16 @@
 shader_set(shd_pixel_light);
 shader_set_uniform_f(u_time_, current_time);
 shader_set_uniform_f(u_resolution_,  view_wport[0], view_hport[0]);
-shader_set_uniform_f(u_vignette_settings_, 1.8, 2.1); //vignette inner circle size, vignette outter circle size
-shader_set_uniform_f(u_vignette_color_, 245, 223, 201); //R,G,B - 0 to 255
 shader_set_uniform_f(u_player_light_color_, 255, 164, 4);
 shader_set_uniform_f(u_player_position_,
 	obj_player.x - camera_get_view_x(view_camera[0]),
 	obj_player.y - camera_get_view_y(view_camera[0]) - obj_player.sprite_height / 2
 );
+shader_set_uniform_f(u_light_color_, 255, 164, 4);
+shader_set_uniform_f_array(u_lights_, global.lights);
+shader_set_uniform_f(u_max_power_, obj_player.max_power_);
+shader_set_uniform_f(u_power_, obj_player.power_);
 draw_surface(application_surface, 0, 0);
 shader_reset();
+global.lights = array_create(20 * 3, 0);
+global.light_idx = 0;

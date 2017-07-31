@@ -2,6 +2,7 @@
 var frames = argument0;
 
 if (frames = 0) {
+
 	var height_limit = [2, 10];
 	var height = 9;
 
@@ -39,9 +40,9 @@ if (frames = 0) {
 	
 	autotile(25);
 	
-} else if (frames == 2) {
+} else if frames == 2 {
 
-	with (obj_autotile) {
+	with obj_autotile {
 		instance_destroy();
 	}
 	
@@ -91,7 +92,7 @@ if (frames = 0) {
 
 } else if frames >= 6 {
 
-	with (obj_autotile) {
+	with obj_autotile {
 		instance_destroy();
 	}
 	

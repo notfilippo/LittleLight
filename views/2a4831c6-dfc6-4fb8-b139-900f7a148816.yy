@@ -8,7 +8,7 @@
         "e4d83051-5205-43db-abb3-bac6efca6781"
     ],
     "filterType": "GMSprite",
-    "folderName": "enviroment",
+    "folderName": "system",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

@@ -1,5 +1,8 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Creation of collidable layer, A* grid, shader, parallax layers
+
+global.grid = mp_grid_create(0, 0, room_width / 32, room_height / 32, 32, 32);
+global.light_idx = 0;
+global.lights = array_create(20 * 3, 0.0);
 
 tiles_ = 0;
 debug_ = false;
@@ -13,6 +16,7 @@ for (var yy = 0; yy < tilemap_get_height(tilemap); yy += 1) {
 		if !tile_get_empty(data) {
 			tiles_++;
 			instance_create_layer(xx * 32, yy * 32, "Collisions", obj_solid);
+			mp_grid_add_cell(global.grid, xx, yy);
 		}
 	}
 }
@@ -21,13 +25,19 @@ application_surface_draw_enable(false);
 
 u_time_ = shader_get_uniform(shd_pixel_light, "time");
 u_resolution_ = shader_get_uniform(shd_pixel_light, "resolution");
-u_vignette_settings_ = shader_get_uniform(shd_pixel_light, "vignette_settings");
-u_vignette_color_ = shader_get_uniform(shd_pixel_light, "vignette_color");
 u_player_light_color_ = shader_get_uniform(shd_pixel_light, "player_light_color");
 u_player_position_ = shader_get_uniform(shd_pixel_light, "player_position");
+u_light_color_ = shader_get_uniform(shd_pixel_light, "light_color");
+u_lights_ = shader_get_uniform(shd_pixel_light, "lights");
+u_max_power_ = shader_get_uniform(shd_pixel_light, "max_power");
+u_power_ = shader_get_uniform(shd_pixel_light, "power");
 
 parallax_[0] = layer_get_id("Parallax1x");
 parallax_x_[0] = 0.2;
 
 parallax_[1] = layer_get_id("Parallax2x");
 parallax_x_[1] = 0.4;
+
+if gamepad_is_supported() {
+	if gamepad_is_connected(0) gamepad_set_axis_deadzone(0, 0.32);
+}
