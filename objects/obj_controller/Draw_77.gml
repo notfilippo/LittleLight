@@ -13,7 +13,8 @@ shader_set_uniform_f(u_light_color_, 255, 164, 4);
 shader_set_uniform_f_array(u_lights_, global.lights);
 shader_set_uniform_f(u_max_power_, obj_player.max_power_);
 shader_set_uniform_f(u_power_, obj_player.power_);
-draw_surface(application_surface, 0, 0);
+surface_resize(application_surface,  view_wport[0], view_hport[0])
+draw_surface(application_surface, view_xport[0], view_yport[0]);
 shader_reset();
 global.lights = array_create(20 * 3, 0);
 global.light_idx = 0;
