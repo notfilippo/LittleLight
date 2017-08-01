@@ -1,3 +1,3 @@
 /// @description Stop audio
 
-audio_stop_sound(snd_fire_id_);
+audio_stop_all();

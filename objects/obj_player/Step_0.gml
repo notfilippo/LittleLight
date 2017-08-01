@@ -82,6 +82,8 @@ if distance_to_object(obj_fireplace) < 128 {
 	power_ = clamp(power_ + (random_range(6, 16) * dt), 0, max_power_);
 } else if distance_to_object(obj_torch) < 128 {
 	light_source_ = true;
+} else if distance_to_object(obj_ceil_torch) < 128 {
+	light_source_ = true;
 } else if distance_to_object(obj_endlevel) < 128 {
 	light_source_ = true;
 } else {

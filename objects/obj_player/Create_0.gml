@@ -13,6 +13,7 @@ power_ = max_power_;
 light_source_ = false;
 
 snd_fire_id_ = audio_play_sound(snd_fire, 1, true);
+snd_level_id_ = audio_play_sound(snd_level, 2, true);
 
 u_max_power_ = shader_get_uniform(shd_extinguish, "max_power");
 u_power_ = shader_get_uniform(shd_extinguish, "power");

@@ -75,7 +75,7 @@
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": true,
-            "hierarchyVisible": true,
+            "hierarchyVisible": false,
             "inheritLayerDepth": false,
             "inheritLayerSettings": false,
             "inheritSubLayers": false,
@@ -87,7 +87,7 @@
             "m_serialiseFrozen": true,
             "name": "Autotile",
             "userdefined_depth": false,
-            "visible": true,
+            "visible": false,
             "instances": [
                 {
                     "id": "7d71e0e4-7f79-4dbf-95c7-5d2a1d27528e",
@@ -9976,8 +9976,8 @@
                     "m_originalParentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "name": "inst_15C5ECFB",
-                    "x": 5824,
-                    "y": 0,
+                    "x": 4800,
+                    "y": 416,
                     "IsDnD": false,
                     "colour": {
                         "Value": 4294967295
