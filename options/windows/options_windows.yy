@@ -6,8 +6,10 @@
     "option_windows_allow_fullscreen_switching": false,
     "option_windows_borderless": false,
     "option_windows_company_info": "Qu4k",
+    "option_windows_copy_exe_to_dest": false,
     "option_windows_copyright_info": "(c) 2017 Qu4k",
     "option_windows_description_info": "Ludum Dare Game",
+    "option_windows_disable_sandbox": false,
     "option_windows_display_cursor": true,
     "option_windows_display_name": "Little Light",
     "option_windows_enable_steam": false,
@@ -25,6 +27,7 @@
     "option_windows_sleep_margin": 10,
     "option_windows_splash_screen": "${options_dir}\\windows\\splash\\splash.png",
     "option_windows_start_fullscreen": false,
+    "option_windows_steam_use_alternative_launcher": false,
     "option_windows_texture_page": "2048x2048",
     "option_windows_use_splash": true,
     "option_windows_version": {
